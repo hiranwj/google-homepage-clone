@@ -18,6 +18,87 @@ body{
     clear: both;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+}
+
+header > a {
+    display: block;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+#apps {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    border-radius: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+#apps:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+#apps > svg {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+#images {
+    padding: 0 15px;
+}
+
+#sign-in {
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(26, 115, 232);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin: 0 12px 0 8px;
+    min-width: 96px;
+    text-align: center;
+    letter-spacing: .25px;
+}
+
+#sign-in:hover{
+    text-decoration: none;
+    background-color: #1b66c9;
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+}
+
+#sign-in:focus{
+    background-color: #1c5fba;
+    box-shadow:  0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+#sign-in:active{
+    background-color: #1b63c1;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}   
+
 /* Footer */
 
 #country{
@@ -31,15 +112,17 @@ body{
 
 #footer-links{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     height: 46px;
     font-size: 14px;
+    /* background-color: yellow; */
 }
 
 #footer-links div a{
-    /* background-color: yellow; */
+    
     padding: 15px;
     text-decoration: none;
     color: #70757a;
