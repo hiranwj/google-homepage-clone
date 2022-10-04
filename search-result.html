@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My search Result</title>
+</head>
+<body>
+
+    <!-- https://programmablesearchengine.google.com/controlpanel/lookandfeel?cx=10bc9d1e9fcbc4597 -->
+
+    <h1>My search Result</h1>
+    <script async src="https://cse.google.com/cse.js?cx=10bc9d1e9fcbc4597">
+    </script>
+    <script>
+        let params = new URLSearchParams(location.search);
+        document.querySelector("#txt-search").value = params.has('q') ? params.get('q') : "";
+    </script>
+    <div class="gcse-searchresults-only"></div>
+</body>
+</html>

@@ -34,6 +34,7 @@ header {
     align-items: center;
     padding: 6px;
     height: 60px;
+    /* background-color: yellow; */
 }
 
 header > a {
@@ -41,6 +42,7 @@ header > a {
     color: rgba(0,0,0,.87);
     font-size: 13px;
     line-height: 24px;
+    /* background-color: aqua; */
 }
 
 #apps {
@@ -52,6 +54,7 @@ header > a {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    /* background-color: teal; */
 }
 
 #apps:hover {
@@ -62,10 +65,12 @@ header > a {
     width: 24px;
     height: 24px;
     fill: #5f6368;
+    /* background-color: #1b63c1; */
 }
 
 #images {
     padding: 0 15px;
+    /* background-color: lightgreen; */
 }
 
 #sign-in {
@@ -99,7 +104,139 @@ header > a {
     box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }   
 
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+#sec-logo{
+    display: flex;
+    height: calc(100vh - 560px);
+    align-items: flex-end;
+    min-height: 92px;
+    max-height: 290px;
+    /* background-color: lightseagreen; */
+}
+
+#ico-search {
+    padding-right: 13px;
+    width: 33px;
+    height: 44px;
+    fill: #9aa0a6;
+    /* background-color: lightslategray; */
+}
+
+#ico-mic svg{
+    width: 24px;
+    height: 24px;
+    /* background-color: lightgrey; */
+}
+
+#ico-mic{
+    width: 44px;
+    height: 44px;
+    padding: 0 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightseagreen; */
+}
+
+#search-form{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #1c5fba; */
+}
+
+
+#form-input{
+    width: 100%;
+    max-width: 584px;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin-top: 6px;
+    padding: 0 8px 0 14px;
+    display: flex;
+    /* background-color: #58f7ac; */
+}
+
+#form-input:hover, 
+#form-input:focus-within{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: transparent;
+}
+
+#form-input input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+#sec-buttons{
+    padding-top: 18px;
+}
+
+#sec-buttons button{
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    border-radius: 4px;
+}
+
+#sec-buttons button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+
+#sec-buttons button:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#sec-lang{
+    margin-top: -8px;
+    font-size: 13px;
+    color: #4d5156;
+    line-height: 28px;
+    /* background-color: lightseagreen; */
+}
+
+#sec-lang a{
+    padding: 0 3px;
+}
+
 /* Footer */
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #f2f2f2; */
+    /* background-color: yellow; */
+}
 
 #country{
     padding: 15px 30px;
@@ -130,4 +267,81 @@ header > a {
 
 #footer-links div a:hover{
     text-decoration: underline;
+}
+
+/* aside */
+
+aside::-webkit-scrollbar {
+    width: 16px;
+}
+aside::-webkit-scrollbar-thumb {
+    background: #dadce0;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    min-height: 50px;
+}
+aside::-webkit-scrollbar-track, .EHzcec::-webkit-scrollbar-track:hover {
+    background: none;
+    border: none;
+}
+
+aside{
+    height: 438px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 10px;
+    top: 75px;
+    background-color: orange;
+}
+
+#top-wrapper, #bottom-wrapper{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    background-color: yellow;
+}
+
+#top-wrapper>div, #bottom-wrapper>div{
+    /* border: 1px solid black; */
+    padding: 6px;
+    background-color: #70757a;
+}
+
+#top-wrapper>div>a, #bottom-wrapper>div>a{
+    display: block;
+    background-color: lightcyan;
+    border-radius: 10px;
+    width: 84px;
+    height: 84px;
+    padding: 6px;
+}
+
+#top-wrapper>div>a:hover, #bottom-wrapper>div>a:hover{
+    background-color: rgba(60, 64, 67, 0.08);
+    
+}
+
+#top-wrapper>div>a>span, #bottom-wrapper>div>a>span{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    background-color: lightgreen;
+}
+
+#top-wrapper>div>a>div, #bottom-wrapper>div>a>div{
+    
+    height: 51.66px;
+    width: 69.99px;
+    background-color: #1b66c9;
+}
+
+#top-wrapper>div>a>div>img, #bottom-wrapper>div>a>div>img{
+    overflow: hidden;
 }
