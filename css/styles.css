@@ -314,11 +314,14 @@ aside{
 
 #top-wrapper>div>a, #bottom-wrapper>div>a{
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     /* background-color: lightcyan; */
     border-radius: 10px;
     width: 84px;
-    height: 84px;
+    height: 90px;
     padding: 6px;
+    
 }
 
 #top-wrapper>div>a:hover, #bottom-wrapper>div>a:hover{
@@ -332,24 +335,39 @@ aside{
     text-align: center;
     line-height: 18px;
     font-size: 14px;
+    color: #202124;
     /* background-color: lightgreen; */
 }
 
-#top-wrapper>div>a>div, #bottom-wrapper>div>a>div{
+/* #top-wrapper>div>a>div, #bottom-wrapper>div>a>div{
     
     height: 51.66px;
     width: 69.99px;
-    /* background-color: #1b66c9; */
-}
+    background-color: #1b66c9;
+} */
 
 #top-wrapper>div>a>div>img, #bottom-wrapper>div>a>div>img{
     overflow: hidden;
 }
 
 #top-wrapper .icon,
-#top-wrapper .icon {
+#bottom-wrapper .icon {
+    /* background-color: yellow; */
     background-size: 64px;
-    height: 64px;
-    width: 64px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    height: 58px;
+    width: 58px;
     background-image: url(https://ssl.gstatic.com/gb/images/p1_e275b4fe.png);
+}
+
+#accountIcon{
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+#accountIcon img{
+    height: 52px;
+    padding-bottom: 2px;
+    margin-top: 5px;
 }
