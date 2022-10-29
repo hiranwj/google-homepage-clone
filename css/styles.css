@@ -293,7 +293,7 @@ aside{
     position: absolute;
     right: 10px;
     top: 75px;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 #top-wrapper, #bottom-wrapper{
@@ -303,18 +303,18 @@ aside{
     justify-items: center;
     align-items: center;
     padding: 10px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #top-wrapper>div, #bottom-wrapper>div{
     /* border: 1px solid black; */
     padding: 6px;
-    background-color: #70757a;
+    /* background-color: #70757a; */
 }
 
 #top-wrapper>div>a, #bottom-wrapper>div>a{
     display: block;
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
     border-radius: 10px;
     width: 84px;
     height: 84px;
@@ -332,16 +332,24 @@ aside{
     text-align: center;
     line-height: 18px;
     font-size: 14px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 #top-wrapper>div>a>div, #bottom-wrapper>div>a>div{
     
     height: 51.66px;
     width: 69.99px;
-    background-color: #1b66c9;
+    /* background-color: #1b66c9; */
 }
 
 #top-wrapper>div>a>div>img, #bottom-wrapper>div>a>div>img{
     overflow: hidden;
+}
+
+#top-wrapper .icon,
+#top-wrapper .icon {
+    background-size: 64px;
+    height: 64px;
+    width: 64px;
+    background-image: url(https://ssl.gstatic.com/gb/images/p1_e275b4fe.png);
 }
